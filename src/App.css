@@ -1,0 +1,516 @@
+body {
+  background-color: rgba(39, 255, 86, 0.74);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* Register Page */
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 40px;
+  border-radius: 8px;
+  background-color: #83ffe0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  /* Adjust width as needed */
+  margin: 31px auto;
+  /* Center the container */
+}
+
+.register-title {
+  color: #3f51b5;
+  /* Similar to the image's title color */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.register-form>* {
+  margin-bottom: 15px;
+}
+
+/* Assuming Input and Button components have their own basic styling */
+/* You might need to adjust or add more specific styles based on how those components are implemented */
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="tel"],
+.register-form input[type="password"] {
+  padding: 12px;
+  width: 324px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #7c4dff, #8a2be2);
+  /* Similar gradient */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+}
+
+#sign-in {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+/* ... previous CSS ... */
+
+.role-select {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.role-select label {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #333;
+  /* Adjust color as needed */
+}
+
+.role-select select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  /* Make the select box take full width */
+  max-width: 200px;
+  /* Adjust maximum width as needed */
+}
+
+/* Style for the "Have account? Sign In" button to match the image */
+.register-form button:last-child {
+  background-color: #5c6bc0;
+  /* Similar to the image's button color */
+  background: linear-gradient(to right, #5c6bc0, #3f51b5);
+}
+
+.error-message {
+  color: red;
+  margin-top: 8px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 8px;
+}
+
+
+/* Login */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  /* Adjust width as needed */
+  margin: 130px auto;
+  /* Center the container */
+}
+
+.login-title {
+  color: #3f51b5;
+  /* Similar to the image's title color */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-form>* {
+  margin-bottom: 15px;
+}
+
+/* Assuming Input and Button components have their own basic styling */
+/* You might need to adjust or add more specific styles based on how those components are implemented */
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 325px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  /* Make the inputs rounded */
+  font-size: 1rem;
+}
+
+.login-button {
+  background: #3f51b5;
+  /* button color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  /* Make the button rounded */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.login-button:hover {
+  opacity: 0.9;
+}
+
+.role-select {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+  justify-content: space-between;
+  /* push label and select to the edges */
+}
+
+
+.role-select label {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.role-select select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  /* Make the select rounded */
+  font-size: 1rem;
+  width: 60%;
+  /* control the width of the select, adjust as needed */
+  box-sizing: border-box;
+  /* Include padding and border in element's total width and height */
+}
+
+/* Investor Dasboard */
+.dashboard-layout {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  background-color: #1f2937;
+  /* Tailwind's gray-800 */
+  color: white;
+  height: 610px;
+  padding: 1rem;
+  margin-left: -9px;
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  color: #d1d5db;
+  /* gray-300 */
+  text-decoration: none;
+  padding: 0.5rem 8px;
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #374151;
+  /* gray-700 */
+  color: white;
+}
+
+/* List of Enterpreneurs */
+
+/* Grid styling inside the entrepreneur section */
+.main-content .entrepreneur-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  margin-top: 80px;
+  margin-left: 40px;
+  width: 420px;
+}
+
+/* Individual entrepreneur card tweaks */
+.main-content .entrepreneur-grid .card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  /* gray-200 */
+  border-radius: 12px;
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.main-content .entrepreneur-grid .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Text and spacing inside cards */
+.card-content p {
+  font-size: 0.95rem;
+  color: #374151;
+  /* gray-700 */
+  margin-top: 0.5rem;
+}
+
+.card-footer a {
+  display: inline-block;
+  background-color: #2563eb;
+  /* blue-600 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: background-color 0.3s;
+}
+
+.card-footer a:hover {
+  background-color: #1d4ed8;
+  /* blue-700 */
+}
+
+#lists {
+
+  margin-left: 100px;
+  font-size: 15px;
+  gap: 50px;
+  line-height: 50px;
+}
+
+
+/* Add this style to create space between table cells */
+.custom-table th,
+.custom-table td {
+  cursor: pointer;
+  border: transparent;
+  padding: 10px 20px;
+  /* vertical 10px, horizontal 20px */
+}
+
+.custom-table td {
+  border-bottom: 1px solid black;
+}
+
+#view-profile {
+  text-decoration: none;
+  color: #1d4ed8;
+  font-weight: bold;
+}
+
+/* If you want space on the left too */
+TableHead,
+TableCell {
+  padding-left: 20px;
+}
+
+/*Or use a single property*/
+TableHead,
+TableCell {
+  padding: 10px 10px;
+  /*This will add padding to the top, bottom, left, and right*/
+}
+
+/* Investor Profile */
+#card {
+  width: 800px;
+  margin-left: 150px;
+  margin-top: 70px;
+}
+
+#card img {
+  height: 200px;
+  width: 200px;
+  margin-left: 300px;
+  margin-top: 10px;
+}
+
+.profile-name {
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 52px;
+
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fafafa;
+  /* soft background */
+  padding: 40px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  color: #333;
+}
+
+.profile-details p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.profile-details strong {
+  color: #111827;
+  /* darker for titles */
+  font-weight: 600;
+}
+
+#collabration-lists {
+  margin-left: 220px;
+  margin-top: 50px;
+  font-size: 17px;
+  gap: 50px;
+  line-height: 50px;
+}
+
+/* Enterpreneur Profile */
+
+/* ProfilePage.css */
+
+#profilePageContainer {
+  display: flex;
+  justify-content: center;
+  /* Centers horizontally */
+  align-items: center;
+  /* Centers vertically */
+  min-height: 100vh;
+  /* Ensures the container takes at least the full viewport height */
+  background-color: #f9f9f9;
+  /* Light gray background */
+}
+
+
+#entrepreneurCard {
+  width: 90%;
+  /* Adjust width for different screen sizes */
+  max-width: 700px;
+  /* Maximum width of the card */
+  margin: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* More pronounced shadow */
+  border-radius: 8px;
+  /* Slightly rounded corners */
+  background-color: #fff;
+  /* White card background */
+}
+
+#cardHeader {
+  background-color: #e1f5fe;
+  /* Light blue header */
+  padding: 16px;
+  border-bottom: 1px solid #b3e5fc;
+  /* Light blue border */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#cardHeader .MuiCardHeader-title {
+  /* Targeting Material-UI's title within the header */
+  font-size: 1.5em;
+  font-weight: 500;
+  /* Slightly lighter bold */
+  color: #1976d2;
+  /* Blue title color */
+}
+
+#cardContent {
+  padding: 24px;
+  color: #333;
+  /* Darker text color */
+}
+
+.card-content p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.label {
+  font-weight: bold;
+  color: #0d47a1;
+  /* Dark blue label color */
+  margin-right: 8px;
+}
+
+/* Message Container */
+.message {
+  padding: 8px 12px;
+  margin: 5px 0;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.message.mine {
+  background-color: #d4f0ff;
+  align-self: flex-end;
+  text-align: right;
+  margin-left: auto;
+  color: black;
+}
+
+.message.other {
+  background-color: #e8e8e8;
+  align-self: flex-start;
+  text-align: left;
+  margin-right: auto;
+  color: black;
+}
+
+.send-btn {
+  background-color: #1976d2;
+  color: #ffffff;
+  width: 70px;
+  border: none;
+  height: 38px;
+  cursor: pointer;
+}
+
+.message-wrapper {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sender-name {
+  font-size: 0.9em;
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
